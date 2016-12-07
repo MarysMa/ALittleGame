@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+p,
+div,
+label,
+ul,
+li,
+input {
+    font-size: 12px;
+    font-family: "microsoft Yahei";
+}
+
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+input {
+    text-decoration: none;
+}
+
+.clearFix:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    content: '';
+}
+
+.clearFix {
+    zoom: 1;
+}
+
+
+/*解决ie6/7兼容问题*/
+
+
+/*main css*/
+
+.g-bd {
+    height: 100%;
+    width: 100%;
+    background: black;
+    overflow: hidden;
+    position: relative;
+}
+
+.g-score {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 30px;
+    color: white;
+}
+
+.g-score label {
+    font-size: 30px;
+}
+
+.g-pb {
+    height: 760px;
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.m-area {
+    width: 400px;
+    height: 400px;
+    background: white;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.m-shape{
+	width: 700px;
+	height: 200px;
+	margin:0 auto;
+	position:relative;
+
+}
+
+.gridlist li {
+    width: 38px;
+    height: 38px;
+    border: 1px solid black;
+    float: left;
+    background: white;
+}
+
+.shape1 {
+	// width: 200px;
+    display: inline-block;
+    position: absolute;
+    // top: 420px;
+    // left: 0;
+    z-index: 2;
+}
+
+.shape2 {
+	// width: 200px;
+    display: inline-block;
+    position: absolute;
+    // top: 420px;
+    // left: 200px;
+    z-index: 2;
+}
+
+.shape3 {
+	// width: 200px;
+    display: inline-block;
+    position: absolute;
+    // top: 420px;
+    // left: 400px;
+    z-index: 2;
+}
+
+.shapediv div {
+    width: 38px;
+    height: 38px;
+    float: left;
+    background: yellow;
+    border: 1px solid black;
+}
+
+// .fshape {
+//     z-index: 1;
+//     opacity: 0.8;
+//     -moz-opacity: 0.8;
+//     filter: alpha(opacity=80);
+//     display: none;
+// }
+
+.black{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 98;
+	display: none;
+}
+
+.gameover{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	background: rgba(0, 0, 0, 0.7);
+	display: none;
+}
+
+.gameover .overimg{
+	width: 600px;
+	height: 480px;
+	background: url(img/gameover.png)no-repeat;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -240px;
+	margin-left: -300px;
+}
+
+.gameover .close{
+	width: 50px;
+	height: 50px;
+	font-size: 40px;
+	position: absolute;
+	top: 150px;
+	right: 150px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+}
+
+.gameover .replay{
+	width: 200px;
+	height: 50px;
+	font-size: 40px;
+	position: absolute;
+	bottom: 150px;
+	left: 50%;
+	margin-left: -100px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+}
+
+.menubtn{
+	width: 50px;
+	height: 50px;
+	background: url(img/menuBtn.png)no-repeat;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	cursor: pointer;
+}
+
+.menu{
+	width: 400px;
+	height: 200px;
+	background: rgba(255, 255, 255, 0.8);
+	z-index: 99;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -100px;
+	display: none;
+}
+.menu .menureplay{
+	width: 150px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	margin-top: -50px;
+	cursor: pointer;
+	background: url(img/replay.png)no-repeat;
+}
+
+.menu .continue{
+	width: 150px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	right: 25px;
+	margin-top: -50px;
+	cursor: pointer;
+	background: url(img/continue.png)no-repeat;
+}
